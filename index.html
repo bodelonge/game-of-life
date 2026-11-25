@@ -9488,7 +9488,7 @@ requestAnimationFrame(()=>requestAnimationFrame(()=>{window.dispatchEvent(new Ev
 /* v8.4 launch candidate. Public service URLs are explicitly configured, never guessed. */
 (()=>{
 'use strict';
-const config=Object.freeze({release:'10.0.0',canonicalURL:'https://bodelonge.github.io/game-of-life/',feedbackURL:'',trafficToken:'',publicReleaseVerified:false});
+const config=Object.freeze({release:'10.0.0',canonicalURL:'https://bodelonge.github.io/game-of-life/',feedbackURL:'https://tally.so/r/2jP8Oe',trafficToken:'',publicReleaseVerified:true});
 const validHttps=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u:null;}catch{return null;}};
 const canonical=validHttps(config.canonicalURL), feedback=validHttps(config.feedbackURL);
 const hosted=!!canonical&&location.origin===canonical.origin&&location.pathname.replace(/index\.html$/,'')===canonical.pathname;
